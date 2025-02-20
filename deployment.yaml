@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: neotech-app
-          image: lionel1109/neotech:latest
+          image: lionel1109/neotech-app:latest
           ports:
             - containerPort: 3000  # Port d'écoute de l'application
