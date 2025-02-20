@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: neotech-app
+spec:
+  replicas: 2  # Nombre d'instances
+  selector:
+    matchLabels:
+      app: neotech-app
+  template:
+    metadata:
+      labels:
+        app: neotech-app
+    spec:
+      containers:
+        - name: neotech-app
+          image: lionel1109/neotech:latest
+          ports:
+            - containerPort: 3000  # Port d'écoute de l'application
