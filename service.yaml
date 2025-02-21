@@ -11,4 +11,4 @@ spec:
     - protocol: TCP
       port: 80        # Port du service interne
       targetPort: 3000  # Port du container
-      nodePort: 30008  # Port exposé sur le nœud (doit être entre 30000-32767)
+      nodePort: 3008  # Port exposé sur le nœud (doit être entre 30000-32767)
