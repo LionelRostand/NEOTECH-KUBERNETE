@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: neotech-service
+  namespace : neotech
 spec:
   type: NodePort  # Expose l’application sur un port du nœud
   selector:
