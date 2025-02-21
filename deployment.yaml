@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: neotech-app
+  namespace : neotech
 spec:
   replicas: 2  # Nombre d'instances
   selector:
